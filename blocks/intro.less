@@ -1,0 +1,183 @@
+//main: ../style.less
+
+.intro{
+
+    @media @mobile{
+        margin-top: 80px;
+    }
+}
+
+.intro__inner{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid fade(@gray, 30%);
+}
+
+.intro__content{
+    padding-top: 100px;
+    padding-bottom: 130px;
+
+    @media @tablet{
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    @media @mobile{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+}
+
+.intro__subtitle {
+    font-size: 2.13rem;
+    font-weight: 200;
+    color: @gray;
+    margin-bottom: 2px;
+
+    @media @tablet{
+        font-size: 1.5rem;
+    }
+}
+
+.intro__title {
+    font-size: 3rem;
+    font-weight: 700;
+
+    @media @tablet{
+        font-size: 2rem;
+    }
+}
+
+.intro__prof{
+    font-size: 1.2rem;
+    color: fade(@black, 70%);
+}
+
+/* Icons */
+
+.intro__icons{
+    margin-top: 20px;
+    font-size: 1.8rem;
+    
+
+    i{
+        margin-right: 10px;
+        padding: 3px 0;
+        border-bottom: 1.2px solid transparent;
+        border-top: 1.2px solid transparent;
+        border-radius: 2px;
+        transition: border-color 0.2s linear;
+    }
+
+    .fab.fa-vk{
+        color: rgb(95, 107, 206);
+
+        &:hover{
+            color: @black;
+            border-bottom: 1.2px solid @black;
+            border-top: 1.2px solid @black;
+        }
+    }
+    
+    .fab.fa-twitter{
+        color: rgb(67, 137, 241);
+
+        &:hover{
+            color: @black;
+            border-bottom: 1.2px solid @black;
+            border-top: 1.2px solid @black;
+        }
+    }
+
+    .fab.fa-instagram{
+        color: rgb(221, 67, 241);
+
+        &:hover{
+            color: @black;
+            border-bottom: 1.2px solid @black;
+            border-top: 1.2px solid @black;
+        }
+    }
+
+    .fas.fa-envelope{
+        color: rgb(241, 103, 122);
+
+        &:hover{
+            color: @black;
+            border-bottom: 1.2px solid @black;
+            border-top: 1.2px solid @black;
+            
+        }
+    }
+
+    @media @mobile-sm{
+        margin-top: 15px;
+    }
+
+}
+
+/* /Icons */
+
+.intro__btns{
+    margin-top: 30px;
+
+    @media @mobile-sm{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+}
+
+.intro__btn{
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 0.7rem;
+    border: 1px solid @gray-light;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: inherit;
+    outline: none;
+    transition: color 0.2s linear;
+    transition: background-color 0.2s linear;
+
+    &:hover{
+        color:white;
+        background-color: @black;
+    }
+
+    &--modal{
+        padding: 15px 50px;
+        margin-right: 0;
+        background-color:transparent;
+    }
+
+    &:first-child{
+
+        @media @mobile-sm{
+            // margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.intro__photo{
+    height: 452px;
+    margin-right: 50px;
+    z-index: 10;
+    align-self: flex-end;
+
+    @media @tablet{
+        width: 300px;
+        height: 380px;
+        margin-bottom: 10px;
+    }
+
+    @media @mobile{
+        display: none;
+    }
+
+    @media @mobile-sm{
+        display: none;
+    }
+}

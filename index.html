@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="img/avatar.jpg" alt="Avatar">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">Gibadullin <br> Denis</div>
+                        <div class="user__prof">UI & UX Designer</div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#works">works</a>
+                    <a class="nav__link" href="#about">about me</a>
+                    <a class="nav__link nav__link--big" href="#skills">skills & experience</a>
+                    <a class="nav__link" href="#footer">contact</a>
+                </nav>
+                <div class="burger" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Hello, I'm</h2>
+                    <h1 class="intro__title">Denis Gibadullin</h1>
+                    <div class="intro__prof">UI & UX Designer</div>
+                    <div class="intro__icons">
+                        <a href=""><i class="fab fa-vk"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="intro__btns">
+                        <a class="intro__btn" href="" data-modal="#modal_request">hire me</a>
+                        <a class="intro__btn" href="">see my resume</a>
+                    </div>
+                </div>
+                <img src="img/intro__racoon.png" alt="" class="intro__photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Works -->
+    <div class="works" id="works">
+        <div class="container">
+            <div class="works__header">
+                <div class="works__title">My works</div>
+                <div class="works__nav">
+                    <a href="" class="works__nav-link" data-filter="all">All</a>
+                    <a href="" class="works__nav-link" data-filter="one-page">One-page sites</a>
+                    <a href="" class="works__nav-link" data-filter="multipage">Multipage sites</a>
+                </div>
+            </div>
+            <!-- Portfolio -->
+            <div class="portfolio">
+
+                <div class="portfolio__inner" data-cat="one-page" data-modal="#modal_project_1">
+                    <div class="portfolio__item">
+                        <img src="img/PortfolioSreens/portfolioIntro.jpg" alt="" class="portfolio__photo">
+                        <div class="portfolio__description">
+                            <div class="portfolio__category">website</div>
+                            <div class="portfolio__text">
+                                <div class="portfolio__text-title">Portfolio</div>
+                                <div class="portfolio__text-year">2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__inner" data-cat="one-page" data-modal="#modal_project_2">
+                    <div class="portfolio__item">
+                        <img src="img/BarcaScreens/BarcaIntro.jpg" alt="" class="portfolio__photo">
+                        <div class="portfolio__description">
+                            <div class="portfolio__category">website - visiting card
+                            </div>
+                            <div class="portfolio__text">
+                                <div class="portfolio__text-title">Barcelona</div>
+                                <div class="portfolio__text-year">2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__inner" data-cat="multipage">
+                    <div class="portfolio__item">
+                        <img src="https://placehold.it/370x230" alt="" class="portfolio__photo">
+                        <div class="portfolio__description">
+                            <div class="portfolio__category">Category</div>
+                            <div class="portfolio__text">
+                                <div class="portfolio__text-title">Title</div>
+                                <div class="portfolio__text-year">2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__inner" data-cat="one-page">
+                    <div class="portfolio__item">
+                        <img src="https://placehold.it/370x230" alt="" class="portfolio__photo">
+                        <div class="portfolio__description">
+                            <div class="portfolio__category">Category</div>
+                            <div class="portfolio__text">
+                                <div class="portfolio__text-title">Title</div>
+                                <div class="portfolio__text-year">2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__inner" data-cat="multipage">
+                    <div class="portfolio__item">
+                        <img src="https://placehold.it/370x230" alt="" class="portfolio__photo">
+                        <div class="portfolio__description">
+                            <div class="portfolio__category">Category</div>
+                            <div class="portfolio__text">
+                                <div class="portfolio__text-title">Title</div>
+                                <div class="portfolio__text-year">2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__inner" data-cat="multipage">
+                    <div class="portfolio__item">
+                        <img src="https://placehold.it/370x230" alt="" class="portfolio__photo">
+                        <div class="portfolio__description">
+                            <div class="portfolio__category">Category</div>
+                            <div class="portfolio__text">
+                                <div class="portfolio__text-title">Title</div>
+                                <div class="portfolio__text-year">2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- /Portfolio -->
+        </div>
+    </div>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__inner">
+                <img src="img/about__racoon.png" alt="" class="about__img">
+                <div class="about__content">
+                    <h1 class="about__title">About me</h1>
+                    <h2 class="about__subtitle">Who am I</h2>
+                    <div class="about__text">
+                        <p>Меня зовут Денис. На данный момент учусь в магистратуре Московского Политеха 
+                            по направлению "Информацонные системы и технологии".</p>
+                        <p>Развиваюсь в направлении веб-разработки, а именно JS, HTMK, CSS, React и др. Готов получать новые знания и умения.</p>
+                        <p>Хочу устроится на работу, чтобы получить стабильный доход, опыт работы с реальными проектами и новых знакомых</p>
+                    </div>
+                    <div class="about__btns">
+                        <a class="intro__btn" href="" data-modal="#modal_request">hire me</a>
+                        <a class="intro__btn" href="">see my resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <div class="skills" id="skills">
+        <div class="container">
+            <div class="skills__slider">
+                <div class="skills__slider__left">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="skills__slider__inner">
+                    <div class="skills__slider__move">
+                        <div class="skills__item">
+                            <div class="skills__text">JavaScript</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__text">HTML</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__text">CSS</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__text">LESS</div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__text">JQuery</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__slider__right">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="skills__description">
+                <img src="img/SkillsImgs/1.jpg" data-number="0" alt="" class="skills__logo">
+                <img src="img/SkillsImgs/2.jpg" data-number="1" alt="" class="skills__logo hover">
+                <img src="img/SkillsImgs/3.jpg" data-number="2" alt="" class="skills__logo hover">
+                <img src="img/SkillsImgs/4.png" data-number="3" alt="" class="skills__logo hover">
+                <img src="img/SkillsImgs/5.jpg" data-number="4" alt="" class="skills__logo hover">
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Profs -->
+    <section class="profs">
+        <div class="container">
+            <h1 class="profs__title">Previous jobs</h1>
+            <div class="profs__inner">
+
+                <div class="profs__item">
+                    <div class="profs__photo__inner">
+                        <img src="img/Jobs/MPU-logo.jpg" alt="" class="profs__photo">
+                    </div>
+                    <div class="profs__date profs__date--small">2016-till now</div>
+                    <div class="profs__name">Moscow Polytechnic University</div>
+                    <div class="profs__description">Studies</div>
+                </div>
+
+                <div class="profs__item">
+                    <div class="profs__photo__inner">
+                        <img src="https://placehold.it/150" alt="" class="profs__photo">
+                    </div>
+                    <div class="profs__date">Empty</div>
+                    <div class="profs__name">Your organization</div>
+                    <div class="profs__description">Empty</div>
+                </div>
+
+                <div class="profs__item">
+                    <div class="profs__photo__inner">
+                        <img src="https://placehold.it/150" alt="" class="profs__photo">
+                    </div>
+                    <div class="profs__date">Empty</div>
+                    <div class="profs__name">Empty</div>
+                    <div class="profs__description">Empty</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__contact">
+                    2020 Gibadullin Denis
+                    <div class="footer__icons">
+                        <a href="" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <a class="footer__nav--link" href="#header"><i class="far fa-arrow-alt-circle-up"></i></a>
+                    <a class="footer__nav--link" href="#works">Works</a>
+                    <a class="footer__nav--link" href="#about">About me</a>
+                    <a class="footer__nav--link" href="#skills">Skills & experience</a>
+                    <a class="footer__nav--link" href="#footer">Contact</a>
+                    <a class="footer__nav--btn" data-modal="#modal_request" href="">hire me</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modals -->
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="workSlider">
+                        <div>
+                            <img class="modal-work__photo" src="img/PortfolioSreens/1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="img/PortfolioSreens/2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <h3 class="modal-work__title">
+                        Portfolio
+                    </h3>
+                    <div class="modal-work__info">
+                        One-page | 2020
+                    </div>
+                    <div class="modal-work__client">Client:</div>
+                    <div class="modal-work__client__name">Self</div>
+                    <div class="modal-work__text">
+                        <p>Одностраничный сайт - портфолио. Содержит ссылки на мои работы и на социальные сети.
+                            Здесь можно посмотреть мои проекты с описанием и скриншотами. Является частичным отражением моих навыков.
+                        </p>
+                        <p>Также содержит личную информацию обо мне, предыдущие места работы и обучения </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn modal-work__btn--prev slickPrev">
+                            <i class="fas fa-chevron-left"></i> Previous</button>
+                        <button class="modal-work__btn modal-work__btn--next slickNext">Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                    </div>
+                </div> <!-- /modal-work__content -->
+            </div> <!-- /modal-work -->
+        </div>
+    </div>
+
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="workSlider">
+                        <div>
+                            <img class="modal-work__photo" src="img/BarcaScreens/4.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="img/BarcaScreens/1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="img/BarcaScreens/2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="img/BarcaScreens/3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <h3 class="modal-work__title">
+                        Barcelona
+                    </h3>
+                    <div class="modal-work__info">
+                        One-page | 2020
+                    </div>
+                    <div class="modal-work__client">Client:</div>
+                    <div class="modal-work__client__name">Self</div>
+                    <div class="modal-work__text">
+                        <p>Одностраничный сайт - визитка, выполненный на примере футбольного клуба Барселона.</p>
+                        <p></p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn modal-work__btn--prev slickPrev">
+                            <i class="fas fa-chevron-left"></i> Previous</button>
+                        <button class="modal-work__btn modal-work__btn--next slickNext">Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                    </div>
+                </div> <!-- /modal-work__content -->
+            </div> <!-- /modal-work -->
+        </div>
+    </div>
+
+    <div class="modal" id="modal_request">
+        <div class="modal__dialog modal__dialog--small">
+            <button class="modal__close .modal__close--ofdsf" type="button" data-close>
+                <img src="img/altClose.svg" alt="">
+            </button>
+            <div class="contact">
+                <div class="contact__left">
+                    <div class="contact__title">Let's talk!</div>
+                    <div class="contact__subtitle">Call me or send me a request</div>
+                    <div class="contact__contacts">
+                        <i class="fas fa-phone-alt"></i>8(968)-917-XX-XX <br>
+                        <i class="fas fa-envelope"></i>superden.gib@gmail.com
+                    </div>
+
+                    <form class="form" action="/" method="POST">
+                        <div class="form__group">
+                            <label for="input-email" class="label">Adress e-mail</label>
+                            <input type="text" class="input" name="input-email" id="input-email"
+                                placeholder="Enter e-mail">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="input-text" class="label">Request</label>
+                            <textarea name="input-text" id="input-text" class="textarea"
+                                placeholder="Type your request..."></textarea>
+                        </div>
+                    </form>
+
+                    <div class="align-right">
+                        <button type="submit" class="intro__btn intro__btn--modal">SEND</button>
+                    </div>
+                </div>
+                <div class="contact__right"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JC -->
+
+    <script src="js/vendor/slick.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+
+</body>
+
+</html>

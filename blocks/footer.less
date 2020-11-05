@@ -1,0 +1,113 @@
+//main: ../style.less
+
+.footer{
+    background-color: #332f30;
+    padding: 0.87rem 0;
+}
+
+.footer__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contact{
+    color: @gray-light;
+    font-size: 0.94rem;
+    display: flex;
+    align-items: center;
+    
+
+    @media @tablet{
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+}
+
+.footer__icons{
+    font-size: 1.46rem;
+    margin-left: 40px;
+    padding: 0 1.3rem;
+    border-left: #424242 solid 1.3px;
+
+    & a{
+        text-decoration: none;
+        color: @gray-light;
+        margin-right: 10px;
+        border-bottom: 1.2px solid transparent;
+        border-top: 1.2px solid transparent;
+        border-radius: 2px;
+        transition: border-color 0.2s linear, color 0.2s linear;
+    }
+
+    & a:hover{
+        color: white;
+        border-bottom: 1.2px solid white;
+        border-top: 1.2px solid white;
+    }
+
+    @media @mobile-sm{
+        margin-left: 10px;
+        padding: 0 0.5rem;
+    }
+}
+
+/* footer__nav */
+
+.footer__nav{
+    display: flex;
+    align-items: center;
+    
+
+    @media @tablet{
+        order: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    @media @mobile-sm{
+        flex-wrap: wrap;
+    }
+}
+
+.footer__nav--link{
+    color: @gray-light;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.2s linear, text-decoration 0.2s linear;
+
+    &:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    @media @mobile-sm{
+        width: 25%;
+        margin-bottom: 0.4rem;
+    }
+    
+    .far{
+        font-size: 20px;
+    }
+}
+
+.footer__nav--btn{
+    color: @gray-light;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid @gray-light;
+    border-radius: 100px;
+    font-size: 0.9rem;
+    line-height: 0.7rem;
+    padding: 0.66rem 1.4rem;
+    margin-left: 10px;
+    transition: border-color 0.2s linear, color 0.2s linear;
+
+    &:hover{
+        color:white;
+        border-color: white;
+    }
+}

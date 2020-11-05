@@ -1,0 +1,143 @@
+//main: ../style.less
+
+
+.modal-work{
+    display: flex;
+
+    @media @mobile{
+        flex-wrap: wrap;
+    }
+}
+
+.modal-work__preview{
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+
+    @media @mobile{
+        width: 100%;
+        height: 300px;
+        order: 2;
+    }
+}
+
+.modal-work__photo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.modal-work__content{
+    width: 35%;
+    min-height: 70vh;
+    padding: 3.4rem 6.6rem 1rem 1.73rem;
+    position: relative;
+
+    @media @mobile{
+        width: 100%;
+        min-height: 0;
+    }
+}
+
+.modal-work__title{
+    font-size: 2.12rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+
+    @media @mobile{
+        margin-bottom: 0.1rem;
+    }
+}
+
+.modal-work__info{
+    font-size: 1.2rem;
+    color: @gray;
+    text-transform: uppercase;
+    margin-bottom: 2.2rem;
+
+    @media @mobile{
+        margin-bottom: 1rem;
+    }
+}
+
+.modal-work__client{
+    font-size: 1.06rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.modal-work__client__name{
+    font-size: 0.94rem;
+    font-style: italic;
+    color: @gray;
+    margin-bottom: 2.2rem;
+
+    @media @mobile{
+        margin-bottom: 1rem;
+    }
+}
+
+.modal-work__text{
+    font-size: 0.8rem;
+    color: @gray;
+    line-height: 2;
+    font-weight: 300;
+    margin-bottom: 8.66rem;
+
+    @media @mobile{
+        margin-bottom: 2.5rem;
+    }
+}
+
+.modal-work__footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 1.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.modal-work__btn{
+    font-size: 0.94rem;
+    color: @black;
+    text-transform: uppercase;
+    background: none;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+
+
+    &--prev{
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 0.7rem;
+            margin-right: 0.2rem;
+        }
+    }
+
+    &--next{
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 0.7rem;
+            margin-left: 0.2rem;
+        }
+    }
+
+}

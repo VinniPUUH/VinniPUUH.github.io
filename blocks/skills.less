@@ -1,0 +1,97 @@
+//main: ../style.less
+
+.skills{
+    background: #332f30 url("img/bg__skills.png") center no-repeat;
+    background-size: cover;
+    padding: 68px 0 80px;
+    position: relative;
+}
+
+.skills__slider{
+    
+    i{
+        font-size: 33px;
+        color: #ffffff;
+    }
+}
+
+.skills__slider__inner{
+    width: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.skills__slider__move{
+    display: flex;
+    width: max-content;
+    transition: transform linear 0.3s;
+}
+
+.skills__slider__left{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    z-index: 1000;
+    cursor: pointer;
+
+    @media @tablet{
+        left: 20%;
+    }
+
+    @media @mobile-sm{
+        left: 5%;
+    }
+}
+
+.skills__slider__right{
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    z-index: 1000;
+    cursor: pointer;
+
+    @media @tablet{
+        right: 20%;
+    }
+
+    @media @mobile-sm{
+        right: 10%;
+    }
+}
+
+.skills__item{
+    
+}
+
+.skills__text{
+    color: #ffffff;
+    width: 400px;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+
+    @media @mobile-sm{
+        font-size: 2.5rem;
+    }
+}
+
+.skills__description{
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: -53px;
+    width: 100%;
+}
+
+.skills__logo{
+    border: white solid 4px;
+    border-radius: 50%;
+    width: 106px;
+    height: 106px;
+}
+
+.hover{
+    display: none;
+}

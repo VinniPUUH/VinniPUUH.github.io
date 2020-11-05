@@ -1,0 +1,50 @@
+@import "vars.less";
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: @black;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+
+/* Vendor */
+@import "blocks/vendor/slick.less";
+
+/* Blocks */
+@import "blocks/container.less";
+@import "blocks/header.less";
+@import "blocks/user.less";
+@import "blocks/nav.less";
+@import "blocks/intro.less";
+@import "blocks/works.less";
+@import "blocks/portfolio.less";
+@import "blocks/about.less";
+@import "blocks/skills.less";
+@import "blocks/profs.less";
+@import "blocks/footer.less";
+@import "blocks/modal.less";
+@import "blocks/modal-work.less";
+@import "blocks/contact.less";
+@import "blocks/form.less";
+@import "blocks/burger.less";
+
+

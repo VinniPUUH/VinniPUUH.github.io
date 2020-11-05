@@ -1,0 +1,98 @@
+//main: ../style.less
+
+
+
+
+.about{
+    margin: 7rem 0;
+
+    @media @mobile{
+        margin-bottom: 5rem;
+        margin-top: 3rem;
+    }
+
+    @media @mobile-sm{
+        margin-bottom: 4rem;
+    }
+}
+
+.about__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__img{
+    height: 452px;
+    margin-top: -70px;
+    margin-left: 20px;
+    z-index: 10;
+
+    @media @tablet{
+        margin-left: 0;
+    }
+
+    @media @mobile{
+        display: none;
+    }
+
+}
+
+.about__content{
+    width: 50%;
+
+    @media @mobile{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.about__title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @media @tablet{
+        font-size: 2.5rem;
+    }
+
+    @media @mobile{
+        font-size: 2rem;
+    }
+}
+
+.about__subtitle{
+    font-size: 6.1rem;
+    color: fade(@black, 15%);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1.4rem;
+    margin-left: -0.6rem;
+
+    @media @tablet{
+        font-size: 4rem;
+    }
+
+    @media @mobile{
+        font-size: 3rem;
+    }
+}
+
+.about__text{
+    font-size: 0.8rem;
+    line-height: 2;
+    color: @gray;
+    font-weight: 300;
+    margin-bottom: 2.8rem;
+}
+
+.about__btns{
+    
+
+    @media @mobile-sm{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        justify-content: center;
+    }
+}

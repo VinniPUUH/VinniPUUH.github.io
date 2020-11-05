@@ -1,0 +1,41 @@
+//main: ../style.less
+
+.works{
+    margin-top: 42px;
+}
+.works__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.works__title{
+    font-size: 0.93rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media @mobile-sm{
+        font-size: 0.8rem;
+    }
+}
+
+.works__nav{
+    display: flex;
+}
+
+.works__nav-link{
+    margin-right: 15px;
+    font-size: 0.85rem;
+    color: fade(@black, 70%);
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+
+    @media @mobile-sm{
+        font-size: 0.7rem;
+        margin-right: 5px;
+    }
+}
