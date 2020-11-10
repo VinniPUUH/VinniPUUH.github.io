@@ -415,8 +415,6 @@ body.no-scroll {
   margin-right: 0;
   background-color: transparent;
 }
-@media (max-width: 565px) {
-}
 .intro__photo {
   height: 452px;
   margin-right: 50px;
