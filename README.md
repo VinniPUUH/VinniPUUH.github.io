@@ -24,7 +24,7 @@
 Чтобы открыть проект на локальном сервере, нужно скачать проект и открыть страницу index.html. Все библиотеки подключены через CDN.
 <br> 
 или через терминал
-1. git clone https://github.com/VinniPUUH/Portfolio-site.git
+1. git clone https://github.com/VinniPUUH/VinniPUUH.github.io.git
 2. cd Portfolio-site
 3. start index.html
 
